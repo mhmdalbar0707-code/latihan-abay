@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dilah dan abay</title>
+    <link rel="stylesheet" href="styleabay.css" />
+    <style>
+        body {
+            background: linear-gradient(120deg, #f7cac9 0%, #92a8d1 100%);
+        }
+
+        .produk-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .produk-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+            width: 270px;
+            padding: 22px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .produk-card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(146, 168, 209, 0.25);
+        }
+
+        .produk-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .produk-nama {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #92a8d1;
+        }
+
+        .produk-harga {
+            font-size: 18px;
+            color: #f7cac9;
+            margin-bottom: 12px;
+        }
+
+        .produk-btn {
+            background: linear-gradient(90deg, #92a8d1, #f7cac9);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 22px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .produk-btn:hover {
+            background: linear-gradient(90deg, #f7cac9, #92a8d1);
+        }
+
+        @media (max-width: 700px) {
+            .produk-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <div class="container-navbar">
+            <ul class="ul-navbar">
+                <li class="li-navbar"><a href="index.html" class="a-navbar">Home</a></li>
+                <li class="li-navbar"><a href="profil.html" class="a-navbar">Profile</a></li>
+                <li class="li-navbar"><a href="jualan.html" class="a-navbar">Dilah dan Abay</a></li>
+                <li class="li-navbar"><a href="about.html" class="a-navbar">About Dilah</a></li>
+                <li class="li-navbar"><a href="contact.html" class="a-navbar">Picture Dilah</a></li>
+            </ul>
+        </div>
+        <!-- PRODUK LIST -->
+        <div class="container-content" style="flex-direction: column; align-items: stretch;">
+            <h1 style="text-align:center; color:#4173cf; margin-bottom:40px;">You and me?</h1>
+            <div class="produk-list">
+                <div class="produk-card">
+                    <img src="WhatsApp Image 2025-08-23 at 19.48.58.jpeg" alt=""
+                        class="produk-image" />
+                    <button class="produk-btn">"Ini Aku dan dilah waktu di acara nikahan guru"</button>
+                </div>
+                <div class="produk-card">
+                    <img src="WhatsApp Image 2025-08-23 at 19.45.27.jpeg" alt="" class="produk-image" />
+                    <button class="produk-btn">"Ketika main di sawah"</button>
+                </div>
+                <div class="produk-card">
+                    <img src="WhatsApp Image 2025-08-23 at 19.44.10.jpeg" alt=""
+                        class="produk-image" />
+                    <button class="produk-btn">"Sebelum pengibaran bendera di lapangan segitiga"</button>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="container-footer">
+            <h1 class="h1-footer">Miss</h1>
+        </div>
+    </div>
+    <script src="data.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profil Dilah</title>
+    <link rel="stylesheet" href="styleabay.css" />
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffdde1 5%, #ee9ca7 100%);
+            min-height: 100vh;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            color: #000000;
+            padding: 5px 5px;
+            border-radius: 30px;
+            box-shadow: 0 8px 32px #0000000;
+            text-align: center;
+            width: 470px;
+            position: relative;
+            animation: fadeIn 1.2s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 60%;
+            object-fit: cover;
+            margin-bottom: 50px;
+            border: 5px solid #000000;
+            box-shadow: 10px 16px #black;
+            transition: transform 0.5s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.07) rotate(-3deg);
+        }
+
+        .profile-name {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+            background: linear-gradient(90deg, #000000, #000000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .profile-desc {
+            font-size: 17px;
+            margin-bottom: 18px;
+            font-style: italic;
+            color: #000000;
+        }
+
+        .profile-info {
+            list-style: none;
+            padding: 0;
+            font-size: 16px;
+            text-align: left;
+            margin: 0 auto;
+            max-width: 260px;
+        }
+
+        .profile-info li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-info strong {
+            color: #000000;
+            margin-right: 8px;
+        }
+
+        .icon {
+            font-size: 22px;
+            margin-right: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 400px) {
+            .profile-card {
+                width: 95vw;
+                padding: 20px 5vw;
+            }
+        }
+    </style>
+    <!-- Ikon dari CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <div class="container-navbar">
+            <ul class="ul-navbar">
+                <li class="li-navbar"><a href="index.html" class="a-navbar">Home</a></li>
+                <li class="li-navbar"><a href="profil.html" class="a-navbar">Profile</a></li>
+                <li class="li-navbar"><a href="jualan.html" class="a-navbar">Dilah dan Abay</a></li>
+                <li class="li-navbar"><a href="about.html" class="a-navbar">About Dilah</a></li>
+                <li class="li-navbar"><a href="contact.html" class="a-navbar">Picture Dilah</a></li>
+            </ul>
+        </div>
+        <!-- PROFILE CARD -->
+        <div class="container-content">
+            <div class="profile-card">
+                <img src="WhatsApp Image 2025-08-23 at 18.37.18.jpeg" alt="albar" class="profile-img" />
+                <div class="profile-name">Siti Nur Fadilah</div>
+                <div class="profile-desc">Seseorang yang sangat cantik, lucu, imut, dan menggemaskan</div>
+                <ul class="profile-info">
+                    <li><span class="icon"><i data-feather="activity"></i> ></i></span><strong>Hobi:</strong> Menggambar
+                        dan menyanyi</li>
+                    <li><span class="icon"><i data-feather="activity"></i> ></span><strong>hewan
+                            Kesukaan:</strong>Kucing</li>
+                </ul>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="container-footer">
+            <h1 class="h1-footer">Salam Kenal ya</h1>
+        </div>
+    </div>
+    <script src="data.js"></script>
+</body>
+
+</html>

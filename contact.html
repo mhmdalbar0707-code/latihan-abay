@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Picture dilah</title>
+    <link rel="stylesheet" href="styleabay.css" />
+    <style>
+        body {
+            background: linear-gradient(120deg, #f7cac9 0%, #92a8d1 100%);
+        }
+
+        .galeri-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .foto-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.13);
+            width: 260px;
+            padding: 18px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .foto-card:hover {
+            transform: scale(1.04);
+            box-shadow: 0 8px 32px rgba(146, 168, 209, 0.25);
+        }
+
+        .foto-img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+
+        .foto-caption {
+            font-size: 15px;
+            color: rgb(2, 60, 248);
+            margin-top: 6px;
+        }
+
+        @media (max-width: 700px) {
+            .galeri-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <div class="container-navbar">
+            <ul class="ul-navbar">
+                <li class="li-navbar"><a href="index.html" class="a-navbar">Home</a></li>
+                <li class="li-navbar"><a href="profil.html" class="a-navbar">Profile</a></li>
+                <li class="li-navbar"><a href="jualan.html" class="a-navbar">Dilah dan Abay</a></li>
+                <li class="li-navbar"><a href="about.html" class="a-navbar">About Dilah</a></li>
+                <li class="li-navbar"><a href="contact.html" class="a-navbar">Picture Dilah</a></li>
+            </ul>
+        </div>
+        <!-- GALERI FOTO -->
+        <div class="container-content" style="flex-direction: column; align-items: stretch;">
+            <h2 style="text-align:center; color:rgb(2, 60, 248); margin-bottom:20px;">Pict Dilaaaaaa</h2>
+            <div class="galeri-container">
+                <div class="foto-card">
+                    <img src="WhatsApp Image 2025-08-23 at 18.37.18 (1).jpeg" alt="Dilah menjadi mc di event badminton"
+                        class="foto-img" />
+                    <div class="foto-caption">Jadi MC di event badminton</div>
+                </div>
+                <div class="foto-card">
+                    <img src="WhatsApp Image 2025-08-23 at 19.11.22.jpeg"
+                        alt="Jadi ini tuh selesai latihan PBB terus jajan boba" class="foto-img" />
+                    <div class="foto-caption">Jajan boba enak loh</div>
+                </div>
+                <div class="foto-card">
+                    <img src="WhatsApp Image 2025-08-23 at 19.38.21.jpeg" alt="Sebelum berangkat PKL"
+                        class="foto-img" />
+                    <div class="foto-caption">Iseng iseng foto</div>
+                </div>
+                <div class="foto-card">
+                    <img src="WhatsApp Image 2025-08-23 at 19.37.53.jpeg" alt="Waktu lagi dateng di marketday SDN KDW"
+                        class="foto-img" />
+                    <div class="foto-caption">Marketday di SDN KDW</div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="container-footer">
+            <h1 class="h1-footer">Aku suka semua Dilahhhh</h1>
+        </div>
+    </div>
+    <script src="data.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+812\Documents\latihan2abay\abay.css */
+/* Menggunakan Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset dan style dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1a202c;
+    background-image: linear-gradient(to top right, #1a202c, #2d3748, #4a5568);
+}
+
+/* Kontainer Form Login */
+.login-container {
+    width: 400px;
+    padding: 40px;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.05); /* Efek kaca */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.login-form h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.login-form p {
+    color: #a0aec0;
+    margin-bottom: 30px;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0aec0;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 15px 15px 15px 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input::placeholder {
+    color: #a0aec0;
+}
+
+.input-group input:focus {
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.5);
+}
+
+/* Opsi Lupa Password */
+.options {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.forgot-password {
+    color: #a0aec0;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.forgot-password:hover {
+    color: #4299e1;
+}
+
+/* Tombol Login */
+.login-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #4299e1, #3182ce);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(66, 153, 225, 0.3);
+}
+
+/* Link Daftar */
+.signup-link {
+    margin-top: 25px;
+    font-size: 0.9rem;
+}
+
+.signup-link p {  
+    color: #a0aec0;
+}
+
+.signup-link a {
+    color: #4299e1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup
